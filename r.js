@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 var prefix = 'r!' 
 
-client.on("ready", () => {client.user.setGame('k!yardım | Oralet :D | Çay bardağına rakı , https://twitch.tv/GardropFuat') 
+client.on("ready", () => {client.user.setGame('r!yardım | Oralet :D | Çay bardağına rakı , https://twitch.tv/GardropFuat') 
 
 }); 
 
