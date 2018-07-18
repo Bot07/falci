@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 var prefix = 'f!' 
 
-client.on("ready", () => {client.user.setGame('f!yardım | Fal baktırmak ister misin? | Sunucu Sayısı: ' + client.guilds.size , https://twitch.tv/GardropFuat') 
+client.on("ready", () => {client.user.setGame('f!yardım | Fal baktırmak ister misin? | Sunucu Sayısı: ' + client.guilds.size , 'https://twitch.tv/GardropFuat') 
 
 }); 
 
