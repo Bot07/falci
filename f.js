@@ -6,10 +6,16 @@ const client = new Discord.Client();
 
 var prefix = 'f!' 
 
-client.on("ready", () => {client.user.setGame('f!yardım | Fal baktırmak ister misin? | Sunucu Sayısı: ' + client.guilds.size , 'https://twitch.tv/GardropFuat') 
+
+client.on("ready", () => {client.user.setGame('o!yardım | Kivi mi? Portakal mı? | Sunucu Sayısı: ' + client.guilds.size , 'https://twitch.tv/GardropFuat') 
 
 }); 
 
+client.on('ready', () => { 
+
+   console.log(`Bot${client.user.tag} adı ile giriş yaptı!`); 
+
+ }); 
 
 
 
