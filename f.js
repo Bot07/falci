@@ -189,7 +189,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nfyazıtura = Bot yazı tura atar.")
+"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nf!yazıtura = Bot yazı tura atar.")
 
 
 
@@ -296,7 +296,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nfyazıtura = Bot yazı tura atar.")
+"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nf!yazıtura = Bot yazı tura atar.")
 
 
 
