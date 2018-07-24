@@ -605,9 +605,6 @@ if(msg.content.startsWith(prefix + 'falyardım')){
 
 
 
-if(msg.author.id != 413346140768043018){ 
-
-
 let embed = new Discord.RichEmbed()   
 
 
