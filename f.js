@@ -328,4 +328,51 @@ msg.channel.send({embed: embed})
 
 
 });
+client.on('message', msg => {
+
+
+
+if(msg.content.startsWith(prefix + 'tavsiye')){ 
+
+
+
+if(msg.author.id != 413346140768043018){ 
+
+  let söz = msg.content.substring(2 + 7);
+
+client.users.get('368450660036771850').send(msg.author.username + ' adlı kişinin tavsiyesi: ' + söz); 
+
+
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField('**Bot Sahibine şunu tavsiye ettiniz: **' + söz + '\n**Tavsiyeniz bot sahibine iletildi.**', 
+
+
+
+'***En yakın zamanda dönüş alacaksınız.***'); 
+
+
+
+client.channels.get("401633988726226956").send(msg.author.username + '** şunu tavsiye etti: **' + söz );   
+
+
+
+msg.channel.send({embed: embed}) 
+
+
+
+}} 
+
+
+
+});
+
+
 client.login(process.env.BOT_TOKEN)
