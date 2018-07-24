@@ -691,4 +691,34 @@ const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada yalnız kalmak, ne yazık ki iyi anlamlara gelmez ve hayırlı olan şeyleri çağrıştırmaz. Bu rüya, gerçek anlamına benzer şekilde tabir edilir ve kişinin çevresinde en fazla insan olması gerektiği zamanda durumun tam aksine kendisine el atacak kimselerin bulunmayacağına, çektiği eziyetle baş başa kalacağına, kime gideceğine, kimden akıl soracağına ve ne yapacağını bilemez olacağına işaret eder.')
 		}
 	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım deniz)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada deniz görmek maddi olarak rahatlamaya ve bereketlenmeye işaret eder. Yatırım yapabilir, yeni eşyalar alabilir veya para biriktirebilirsiniz. Ayrıca paranızın bereketi de artar. Yeni kazanç kapıları açılabilir. Rüyasında deniz gören kişinin gönlünde ne varsa gerçekleşir. Amaçlarına kolayca ulaşır, deniz gibi zengin ve renkli bir yaşam sürer diye tabir edilir. Rüyada deniz görmek kazancınızın artacağına işaret etmektedir. Rüyada görülen deniz çoğunlukla hayra yorulur. Güzel bir deniz manzarası görmeniz manevi hayatınızdaki yükselmeye ve derinden gelen huzura delalet eder. Denizde dalgalar olsa bile hayırlı anlamı değişmez. Eğer deniz size uzak kalmışsa, feraha erene kadar biraz sıkıntı çekeceksiniz demektir. Denizi gönül rahatlığıyla izlemeniz içten gelen huzuru işaret eder. Deniz ayrıca günah işleyen bir kimse için günahlardan pişman olarak tövbe etmeye de yorulmaktadır. Bu rüyayı gören kişi bir kafir ise dine dönecektir. Rüyasında bir yolculuğa çıktığını ve denizin yolu üzerinde bir engel oluşturduğunu gören kimse, planladığı yolculuğa çıkamaz.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım bebek)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada bebek görmek mutluluk ve neşenin habercisidir. Bazen rüyanızda bebek görmüş olsanız bile bu rüya size iç sıkıntısı verebilir. Bu gibi durumlarda olumsuz düşünmeye gerek yoktur. Rüyada bebek görmek her zaman iyiye yorulmaktadır. Bebek özellikle şansı simgeler. Şanslı günlerin kapıda olduğunun habercisidir. Beklemedeğiniz kapılar size açılabilir, gündemde olmayan maddi gelirler ortaya çıkabilir. İçgüdülerinize ve fikirlerinize güvenmelisiniz zira bu dönemde aklınıza gelen fikirler size fayda sağlayacaktır. Gireceğiniz işlerde şansınız yüksek olacaktır. Bu rüyanın bir çok güzel anlamı vardır. Etrafınızdaki insanlardan göreceğiniz faydalar da söz konusu olabilir. Ayrıca bebek, doğumdan sonra ortaya çıkan mucizevi bir varlık olduğundan rüyalarda yeni oluşan durumları, işleri, gelir kapılarını, dostlukları ve aşkı da simgeleyebilir. Rüyada görülen bebek neşenin, huzurun ve mutluluğun sembolüdür. Bazı durumlarda rüya, bebeğin nasıl görüldüğüne göre farklı şekillerde de tabir olunmaktadır. Örneğin mutlu ve güzel bir bebek feraha ermeye delalet ederken, ağlayan bir bebek  içinizdeki pişmanlıkların sembolü olabilir. Aşağıda rüyada bebeğin görülme şekillerine göre, çeşitli tabirler yer almaktadır. Rüyanızda gördüğünüz diğer nesneler ve olaylarla birlikte yorumladığınızda rüyanızın size ne anlatmaya çalıştığını çok daha net anlayabilirsiniz. Rüyanızda bebek sevdiğinizi görmeniz, alacağınız güzel haberlerin müjdecisidir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım kedi)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada kedi görmek çocuk sahibi olacağınıza, eğer kadın iseniz eşinizden dolayı biraz sıkıntı çekeceğinize, etrafınızda düşmanlar olabileceğine işaret etmektedir. Rüyada kedi görmek, son derece laubalı ve çevresindeki insanları kurnazca kandıran, samimiyetsiz ve iki yüzlü bir erkeğe yorulur. Bir diğer rüya tabirine göre rüyada kedi görmek anne iseniz, çocuğunuza karşı gereğinden fazla zorlayıcı davranıyor ve onun eğitimini çocuğunuzu sıkacak bir şekilde vermeye çalışıyorsunuz demektir. Çağdaş ulemaya göre rüyada kedi görmek riyakar insanlarla karşılaşacağınıza veya bir konu hususunda ümitsizliğe düşeceğinize yorulur.')
+		}
+	});
 client.login(process.env.BOT_TOKEN)
