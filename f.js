@@ -600,7 +600,7 @@ msg.channel.send({embed: embed})
 });
 client.on('message', msg => {
 if (msg.channel.id ! = 471284019414302721){
-else (msg.content.toLowerCase().match(/(tavşan)/g)) {
+else if (msg.content.toLowerCase().match(/(tavşan)/g)) {
 
 msg.channel.send('davşanlar');	
 
