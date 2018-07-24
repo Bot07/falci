@@ -602,7 +602,7 @@ client.on('message', msg => {
 
 if (msg.content.toLowerCase().match(/(tavşan)/g)) {
 
-msg.reply('tavşanlar');	
+msg.reply('davşanlar');	
 
 
 
