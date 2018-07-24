@@ -621,4 +621,14 @@ const channel = msg.guild.channels.find('name', "fal")
 channel.send('Cafer-i Sadık rüyada köpek görmekle ilgili dört farklı anlama işaret eder. Kötü bir hasım, gözü tok bir erkek, güzel olmayan bir hizmetçi ve bilgisiz bir erkek. Rüyada köpek görmek, köpeği ne şekilde gördüğünüze göre anlamı değişen bir tabire sahiptir. Arzularına ve zevklerine düşkün bir kişiyi temsil edebileceği gibi düşman da olsa aynı zamanda şefkatli ve merhametli bir kimseyi de temsil edebilmektedir. Dişi köpek ise daha çok kötü karakterli bir kadına işaret eder. Bu tarz bir kadın başınıza bela açacaktır. Ancak genel olarak, yakın çevrenizdeki dostlarınıza ve düşmanlarınıza işaret eder. Rüyanızda köpeğe olan üstünlüğünüz veya galibiyetiniz düşmanlarınızla veya rakiplerinizle olan güç savaşının sonucunu gösterdiği gibi aynı zamanda gördüğünüz köpeğin cinsi de dost veya düşmanlarınız hatta sizin kendi karakteriniz hakkında fikirler verebilir.')
 		}
 	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım yılan)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada yılan görmek hakkında çok çeşitli yorumlar bulunmaktadır. Rüya tabirleri yılan için genellikle düşmanı işaret eder. Farkında olmadığınız bir düşmanınız olabilir. Bu düşman genellikle kendisini gizler ve sizden menfaat sağlamaya çalışır. Yılan sinsi ve her an saldırmayı bekleyen bir düşmanı işaret ettiği gibi, büyük zorluklarla karşılaşacağınız anlamına gelebilir. Bu rüya, yılan türlerine göre farklı anlamlara sahiptir. Bunu ayrıntılı olarak anlatmaya çalıştık. Rüyada yılan görmek bir diğer taraftan hayra yorumlanır. Maddi durumunuzun güçleneceğine, ailevi hayatınızda yenilikler yaşayacağınıza işarettir. Bir çocuk sahibi olabilir veya evlilikle sonuçlanacak bir ilişkiye başlayabilirsiniz.')
+		}
+	});
 client.login(process.env.BOT_TOKEN)
