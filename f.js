@@ -95,4 +95,65 @@ msg.channel.send({embed: embed})
 
 
 });
+client.on('message', msg => { 
+
+
+
+if (msg.content === prefix + 'öyardım') { 
+
+
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("KOMUTLAR", 
+
+
+
+"Tüm komutlar burada ->") 
+
+
+
+.addField("Ana Komutlar", 
+
+
+
+"f!fal") 
+
+
+
+.addField("Mod Komutları",  
+
+
+
+"f!fal") 
+
+
+
+.addField("Eğlence Komutları", 
+
+
+
+"f!fal")
+
+
+
+.setFooter("Bot yapımcısı: Emir#5218'dir.") 
+
+
+
+msg.member.send({embed: embed}) 
+
+
+
+}
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
