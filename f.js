@@ -47,8 +47,8 @@ let embed = new Discord.RichEmbed()
 
 
 
-"Özel mesaj (Yardım menüsünü özel mesaj olarak atar.) ve Normal yardım (Sunucudaki chate atar.)") 
-.setDescription("Özel mesaj için = f!öyardım Normal yardım için = f!nyardım")
+"Özel mesaj (Yardım menüsünü özel mesaj olarak atar.) ve Normal yardım (Sunucudaki chate atar.)\n Özel mesaj için = f!öyardım Normal yardım için = f!nyardım") 
+
 
 
 
