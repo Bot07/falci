@@ -287,4 +287,45 @@ msg.reply(`Pong! ${client.ping/1000} saniye`);
 }
 
 });
+client.on('message', msg => {
+
+
+
+if (msg.content === prefix + 'davet') { 
+
+
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("Beni Eklemek İçin Tıkla",  
+
+
+
+"https://goo.gl/CTCyZR") 
+
+
+
+.addField("Fal Dükkanıma Gelmek İçin Tıkla",  
+
+
+
+"https://discord.gg/89j8fNX")   
+
+
+
+msg.channel.send({embed: embed}) 
+
+
+
+} 
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
