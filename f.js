@@ -564,5 +564,21 @@ msg.channel.send(`**Sonuç: ${sonuc}**`);
 
 
 });
+client.on('message', msg => {
 
+if (msg.content === 'falyardım') { 
+
+let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+.addField(Falına bakabilmem için fal türünüde yaz',
+
+'Örneğin; "f!falbaktır rüya" = rüya falı bakar')
+
+msg.channel.send({embed: embed})
+
+}
+
+});
 client.login(process.env.BOT_TOKEN)
