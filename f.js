@@ -598,6 +598,10 @@ msg.channel.send({embed: embed})
 }
 
 });
-
-
+client.on('message', msg => {
+		if (msg.content.toLowerCase().match(/(tavşan)/g)) {
+const channel = client.channels.find('fal', channelName)
+msg.channel.send('a')
+		}
+	});
 client.login(process.env.BOT_TOKEN)
