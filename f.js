@@ -600,17 +600,13 @@ msg.channel.send({embed: embed})
 });
 client.on('message', msg => {
 
+if (msg.content.toLowerCase().match(/(tavşan)/g)) {
+
+msg.reply('tavşanlar');	
 
 
-if(msg.content.startsWith(prefix + 'rüyafalım')){
-	else (msg.content.toLowerCase().match(/(tavşan)/g)) {
-		let embed = new Discord.RichEmbed() 
 
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-		.addField('İşte falın;',
-			  'tavşanlar')
-		
-msg.channel.send({embed: embed})
-	}
+}
+
 });
 client.login(process.env.BOT_TOKEN)
