@@ -591,22 +591,13 @@ let embed = new Discord.RichEmbed()
 
 .addField(msg.author.username + söz + 'falına bakıyorum',
 
-'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve falınızı yazın')
+'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyyanızda ne gördüğünüzü yazın \nÖreneğin; f!rüyafalım tavşan (Kişi tavşan görmüş)')
 
 msg.channel.send({embed: embed})
 
 }
 
 });
-client.on('message', msg => {
-if (msg.channel.id ! = 471284019414302721){
-else if (msg.content.toLowerCase().match(/(tavşan)/g)) {
-
-msg.channel.send('davşanlar');	
 
 
-
-}
-}
-});
 client.login(process.env.BOT_TOKEN)
