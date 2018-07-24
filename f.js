@@ -600,6 +600,7 @@ msg.channel.send({embed: embed})
 });
 client.on('message', msg => {
 	if(msg.author.bot) return;
+	if (msg.content === prefix + 'rüyafalım')
 		if (msg.content.toLowerCase().match(/(tavşan)/g)) {
 			if(!msg.guild) return;
 const channel = msg.guild.channels.find('name', "fal")
