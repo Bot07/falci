@@ -599,14 +599,15 @@ msg.channel.send({embed: embed})
 
 });
 client.on('message', msg => {
-
+	if(msg.author.bot) return;
+if (msg.channel.id ! = 471284019414302721){
 if (msg.content.toLowerCase().match(/(tavşan)/g)) {
 
-msg.reply('davşanlar');	
+msg.channel.send('tavşanlar');	
 
 
 
 }
-
+}
 });
 client.login(process.env.BOT_TOKEN)
