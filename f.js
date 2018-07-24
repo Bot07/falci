@@ -564,4 +564,32 @@ msg.channel.send(`**Sonuç: ${sonuc}**`);
 
 
 });
+client.on('message', msg => {
+
+
+
+if(msg.content.startsWith(prefix + 'falbaktır')){ 
+
+
+
+if(msg.author.id != 413346140768043018){ 
+
+
+
+
+
+
+client.channels.get("471284019414302721").send('falına bakıyorum');   
+
+
+
+msg.channel.send({embed: embed}) 
+
+
+
+}} 
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
