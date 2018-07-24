@@ -572,7 +572,7 @@ let embed = new Discord.RichEmbed()
 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
-.addField(Falına bakabilmem için fal türünüde yaz',
+.addField('Falına bakabilmem için fal türünüde yaz',
 
 'Örneğin; "f!falbaktır rüya" = rüya falı bakar')
 
