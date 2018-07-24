@@ -566,7 +566,7 @@ msg.channel.send(`**Sonuç: ${sonuc}**`);
 });
 client.on('message', msg => {
 
-if (msg.content === 'falyardım') { 
+if (msg.content === prefix + 'falyardım') { 
 
 let embed = new Discord.RichEmbed() 
 
