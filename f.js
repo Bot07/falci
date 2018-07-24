@@ -589,7 +589,7 @@ let embed = new Discord.RichEmbed()
 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
-.addField(msg.author.username + söz 'falına bakıyorum',
+.addField(msg.author.username + söz + 'falına bakıyorum',
 
 'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve falınızı yazın')
 
