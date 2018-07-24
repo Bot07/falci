@@ -579,7 +579,7 @@ if(msg.author.id != 413346140768043018){
 
 
 
-client.channels.get("471284019414302721").send(msg.author.username + 'adlı kişinin falı;');   
+client.channels.get("471284019414302721").send(msg.author.username + ' adlı kişinin falı;');   
 
 let embed = new Discord.RichEmbed() 
 
