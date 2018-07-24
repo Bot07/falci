@@ -611,4 +611,14 @@ const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada tavşan görmek hayatta kazanılacak olan zaferlere, iş hayatındaki olumlu adımlara ve mutluluğa işaret eder. Rüyasında tavşan gören kişinin özel hayatı da hep yolunda gidecek demektir. Rüyada görülen tavşan aynı zamanda kadınla ifade edilir ve kız arkadaş, sevgili, nişanlı ya da eş olarak değerlendirilir. Rüyada beyaz bir tavşan görmek muhafazakâr, hoşgörülü, güler yüzlü ve yumuşak huylu bir kadına delalet eder. Tavşanın siyah renkli ve çok sevimsiz olması kötü huylu, kavgacı, anlayışsız ve kıskanç bir kadına işaret eder. Rüyada bir kimsenin tavşanının ölmesi çocuğunun hastalanmasına, bir sıkıntıya ya da zorluğa düşmesine delalet eder. Rüyada tavşanla konuştuğunu gören kişi toplumdan dışlanmış, yaramaz ve kötü kabul edilmiş bir kadınla tanışarak samimi olacak ve arkadaşlık kuracak demektir. Rüyada tavşanın çok hızlı koşuyor olması kimsenin bilmemesi ve öğrenmemesi gereken bir konu olacağına ve rüya sahibinin de bunu herkesten gizlemeye çalışacağına işaret eder.')
 		}
 	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım köpek)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Cafer-i Sadık rüyada köpek görmekle ilgili dört farklı anlama işaret eder. Kötü bir hasım, gözü tok bir erkek, güzel olmayan bir hizmetçi ve bilgisiz bir erkek. Rüyada köpek görmek, köpeği ne şekilde gördüğünüze göre anlamı değişen bir tabire sahiptir. Arzularına ve zevklerine düşkün bir kişiyi temsil edebileceği gibi düşman da olsa aynı zamanda şefkatli ve merhametli bir kimseyi de temsil edebilmektedir. Dişi köpek ise daha çok kötü karakterli bir kadına işaret eder. Bu tarz bir kadın başınıza bela açacaktır. Ancak genel olarak, yakın çevrenizdeki dostlarınıza ve düşmanlarınıza işaret eder. Rüyanızda köpeğe olan üstünlüğünüz veya galibiyetiniz düşmanlarınızla veya rakiplerinizle olan güç savaşının sonucunu gösterdiği gibi aynı zamanda gördüğünüz köpeğin cinsi de dost veya düşmanlarınız hatta sizin kendi karakteriniz hakkında fikirler verebilir.')
+		}
+	});
 client.login(process.env.BOT_TOKEN)
