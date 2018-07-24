@@ -566,56 +566,19 @@ msg.channel.send(`**Sonuç: ${sonuc}**`);
 });
 client.on('message', msg => {
 
+if (msg.content === 'falyardım') { 
 
-
-if(msg.content.startsWith(prefix + 'falbaktır')){ 
-
-
-
-if(msg.author.id != 413346140768043018){ 
-
-let söz = msg.content.substring(2 + 9);
-client.channels.get("471284019414302721").send(msg.author.username + 'adlı kişinin' + söz + 'falı'); 
-let embed = new Discord.RichEmbed()   
-
-
-
-
+let embed = new Discord.RichEmbed() 
 
 .setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
 
+.addField(Falına bakabilmem için fal türünüde yaz',
 
+'Örneğin; "f!falbaktır rüya" = rüya falı bakar')
 
-.addField('Falına bakıyorum', 
+msg.channel.send({embed: embed})
 
+}
 
-
-'Falına sunucudaki "fal" adlı kanladan öğrenebilirsin'); 
-
-msg.channel.send({embed: embed}) 
-
-
-}} 
-
-
-
-});
-client.on('message', msg => {
-if(msg.content.startsWith(prefix + 'falyardım')){ 
-
-
-
-let embed = new Discord.RichEmbed()   
-
-
-
-
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
-
-.addField('Falına bakabilmem için fal türünüde yaz',
-	  'Örneğin; "f!falbaktır rüya" = rüya falı bakar')
-
-msg.channel.send({embed: embed}) 
 });
 client.login(process.env.BOT_TOKEN)
