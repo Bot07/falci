@@ -715,10 +715,90 @@ client.on('message', msg => {
 	
 	if(msg.author.bot) return;
 		
-		if (msg.content.toLowerCase().match(/(f!rüyafalım kedi)/g)) {
+		if (msg.content.toLowerCase().match(/(f!rüyafalım fare)/g)) {
 			if(!msg.guild) return;
 const channel = msg.guild.channels.find('name', "fal")
-channel.send('Rüyada kedi görmek çocuk sahibi olacağınıza, eğer kadın iseniz eşinizden dolayı biraz sıkıntı çekeceğinize, etrafınızda düşmanlar olabileceğine işaret etmektedir. Rüyada kedi görmek, son derece laubalı ve çevresindeki insanları kurnazca kandıran, samimiyetsiz ve iki yüzlü bir erkeğe yorulur. Bir diğer rüya tabirine göre rüyada kedi görmek anne iseniz, çocuğunuza karşı gereğinden fazla zorlayıcı davranıyor ve onun eğitimini çocuğunuzu sıkacak bir şekilde vermeye çalışıyorsunuz demektir. Çağdaş ulemaya göre rüyada kedi görmek riyakar insanlarla karşılaşacağınıza veya bir konu hususunda ümitsizliğe düşeceğinize yorulur.')
+channel.send('Rüyada fare görmek pek iyiye ve hayırlara işaret değildir. Rüyada görülen fare sağlığa delalet eder. Bunun yanı sıra maddi zarar ve kayıplar anlamına gelir. Örneğin iş hayatında hayal kırıklıkları ve başarısızlıklar gibi. Rüyasında fare gören kişi ortada hiçbir şey yokken aniden hastalanabilir ve yatağa düşebilir. Hane içinde dolaşan fare kişinin maddi zarara uğrayacağına işaret eder. Rüyada fare görmek aynı zamanda kötü huylu, haset bir kadın anlamına gelir. Buna karşın çok fazla fare görmek rızık olarak tabir edilir. Rüyasında evinde farelerin gezindiğini gören kişinin evinde bolluk bereket olur. Bu rüya aynı zamanda kişinin o yıl süresince ucuzluğu ve bereketi yakalayacağının işaretidir. Eğer kişi rüyasında fareyi bulunduğu yerden çıkarken görürse o halde bu rızkın ve bereketin azalacağına işaret eder. Gündüz gözüyle yani gündüz uykusunda görülen fare rüyada sürekli olarak geziyorsa bu uzun ömre işaret eder. Fare eğer evde bir yeri kemirip oyuk açarsa bu eve girecek hırsıza işaret eder.  Bir kişi rüyasında fare yakalar ya da bir faresinin olduğunu görürse bu yine kötü huylu bir kadın anlamına gelir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım ağlamak)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada ağlamak, bazen mutlulukla yorumlanırken bazen de kederle yorumlanmaktadır.  Rüya tabirleri rüyanın nasıl gözüktüğüne ve rüyada görülen diğer şeylere bağlı olarak yapılmaktadır. Dolayısı ile bu noktada rüyanızda gördükleriniz önem kazanır. ')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım balık)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada balık görmek genel olarak hayırla yorumlanmaktadır. Rüyada balık görmek en çok kısmetlerin habercisidir. Size gelecek kısmetler, mal ve mülkler balık sembolüyle rüyanızda size görünürler. Balık görülen rüyalar en hayırlı rüyalar arasında yer almaktadır. Cafer-i Sâdık’a göre rüyada balık görmek tabirleri altı şekilde yapılmaktadır. Rüyada görülen balık, mevki sahibi bir kimseyi, bakire bir kızı, gelecek ganimeti, hizmetçiyi, askeri ve ganimeti simgelemektedir. Danyal (A.S)’a göre balık eğer sıcak bir yerde görülmüşse zorluk çekeceğinize, soğuk bir yerde görülmüşse iyi şeylerle karşılaşacağınıza işaret eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım para)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada para görmek, söylenen sözlerden görülecek zararlara işaret eder. İşiteceğiniz sözler sizin canınızı fazlasıyla sıkabilir. Bazı rüya tabircilerine göre ise etrafınızda sizinle ikiyüzlüce konuşan insanlar olduğuna yorulmaktadır. Alternatif olarak, rüyada para görmek gelecek nimetlerin habercisidir. Bu rüyayı gören kişinin geçimi rahatlar. İç sıkıntıları geçer. Ayrıca yapacağı ufak yardımlar ve ibadetler fazlasıyla ödüllendirilir. Ayrıca, rüyada para görmek, etrafınızdaki ikiyüzlülere karşı sizin edeceğiniz laflara da yorulmaktadır. Genellikle para rüyaları dedikodulara, size söylenen kötü sözlere ya da sizin söyleyeceğiniz kötü sözlere işaret eder. Rüyasında üzerinde Allah’ın adının yazdığı paralar görmek, rüya sahibinin kuran okumaya nazaran diğer ibadetlere ağırlık vereceğinin habercisidir. Para bazen de çekilecek sıkıntılara işaret eder. Maddi ya da manevi zorluklar kapınızda olabilir. Bazı yorumcular ise bu sıkıntının hemen ardından büyük sevinçler yaşanacağını da söylemiştir. Bir diğer rüya tabirine göre ise bu rüya yakın zamanda elde edeceğiniz paraya işaret eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım öpmek)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada öpmenin görülmüş olması etrafındaki düşmanlara diş geçirmeye ve onlara galip gelmeye işaret edilmektedir. Genç bir erkek veya bayanın öpülmesi sevinçli bir haber almaya, Yaşlı bir kadının öpülmesi geçmişte yaptığı bir hatadan dolayı birinden özür dileme şeklinde yorumlanmaktadır. Bir kadının öpülüyor olması sevdiği insandan ilgi ve şefkat görmediğine ama bu beklenti içerisinde olduğuna işarettir. Bir kişi sevdiğinin dudaklarından öptüğünü görüyor ise büyük bir paranın geleceği düşünülmektedir. Sevdiğini yanağından ve anlından öpen kişi ise helal para kazanıyordur ve bunu yiyordur. Gösterişli bir kadını öptüğünü gören erkek dul bir bayan ile aynı yatakta yatacaktır. Şeklinde yorumlanmaktadır. Bir hizmetliyi öpmek ise patronu ile sıcak ilişkiler yaşamaya delalet etmektedir. Bir kadının bir erkeği öptüğünü görmesi ve onunla çok samimi olması dünya hayatında gerçekleşmesini çok istediği bir şeyin gerçekleşeceğine haber verir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım haberalmak)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada haber almak, gerçek anlamına benzer şekilde yorumlanır. Rüya sahibinin çok istediği bir olayın gerçek olması için beklediği müjdenin gelmesine işaret eder. Büyük mutluluk ve sevinç anlamına gelir. Rüya sahibi için eli kulağında olan, ha geldi ha gelecek güzel bir habere işaret eder. Rüyada haber almak, genel olarak güzel sözler duymaya, sürpriz gelişmeler yaşamaya ve çok mutlu olmaya delalet eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım şapka)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada şapka takmak, rüyayı gören kişinin yapacakları sayesinde toplum içinde kendisine olan bakış açısının önemli oranda değişeceği, herkesin saygı duyduğu, önünde eğildiği ve güzel sözlerle andığı kimse olacağı ve mesleğinden de tepelere tırmanacağı anlamına gelir. Zoru ve imkânsızı başarmaya bu sayede gücünü ve kararlılığını göstererek, kendini ispat etmeye tabir edilir ve rüya sahibi için hayır olarak kabul edilir. Rüyada şapka takmak, rüyada görülen şapkanın durumuna göre iki farklı şekilde yorumlanır. Eğer rüyada yeni bir şapka görülmüşse, rüyayı gören kişinin, iş hayatında çok büyük çalışmalar yapacağına, sorunlarından kısa bir zaman içine kurtulacağına, çok büyük ve hayırlı bir aşka yelken açacağına ve çok mutlu olacağına alamet eder. Eğer eski bir şapka görülmüşse, rüya sahibinin çok büyük üzüntüler yaşayacağına, sıkıntılardan ötürü çok zor zamanlar geçireceğine, maddi ve manevi olarak büyük sorunlar yaşayacağına ve çok endişeli bir kişi olacağına')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım jaguar)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada jaguar görmek, tabir yerindeyse alacası içinde saklı olan bir kimseye işaret eder. Yani rüya sahibinin çevresindeki art niyetli, ikiyüzlü, samimiyetsiz ve güvenilmeyecek kişilerin varlığına delalet eder. Rüya sahibinin yüzüne gülen ama arkasından da kuyusunu kazmak ve ayağını kaydırmak için elinden geleni yapan, fitneci ve fesat bir kimsenin varlığına işaret eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım labirent)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada labirent görmek, rüya sahibinin, yaptığı işte detaylara indiği için sorun yaşadığına, bu yüzden zaman ve para kaybettiğine ve sorunu çözmek için daha fazla emek vermesi gerektiğine delalet eder. Aynı zamanda, rüyayı gören kişinin, kısa zaman içinde olmasa bile yaşanan sıkıntılardan kurtulacağına ve sorunlarının üstesinden geleceğine işaret eder.')
 		}
 	});
 client.login(process.env.BOT_TOKEN)
