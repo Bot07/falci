@@ -95,6 +95,56 @@ msg.channel.send({embed: embed})
 
 
 });
+
+client.on('message', msg => {
+
+  if (msg.content.toLowerCase() === prefix + 'sunucubilgi') {
+
+    if  (msg.channel.type === 'dm') {
+
+      const ozelmesajuyarii = new Discord.RichEmbed()
+
+    .setColor(0x00AE86)
+
+    .setTimestamp()
+
+    .setAuthor(msg.author.username, msg.author.avatarURL);
+
+    msg.author.sendEmbed(ozelmesajuyarii); }
+
+    if (msg.channel.type !== 'dm') {
+
+      const sunucubilgi = new Discord.RichEmbed()
+
+    .setColor(0x00AE86)
+
+    .setTimestamp()
+
+    .setAuthor(msg.guild.name, msg.guild.iconURL)
+
+    .addField('Ad:', msg.guild.name)
+
+    .addField('ID', msg.guild.id)
+
+    .addField('Ana kanal:', msg.guild.defaultChannel)
+
+    .addField('Bölge', msg.guild.region)
+
+    .addField('Üye sayısı:', msg.guild.memberCount)
+
+    .addField('Sahibi:', msg.guild.owner)
+
+    .addField('Kanal sayısı:', msg.guild.channels.size)
+
+    .addField('Oluşturulma tarihi:', msg.guild.createdAt);
+
+    return  msg.channel.sendEmbed(sunucubilgi);
+
+    }
+
+  }
+
+});
 client.on('message', msg => { 
 
 
@@ -123,7 +173,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!fal") 
+"f!falyardım = Botun fal bakma özelliği ile ilgili her şey") 
 
 
 
@@ -131,7 +181,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!fal") 
+"f!ekip = Bot ekibini gösterir. \nf!sunucular = Botun ekli olduğu sunucuları gösterir. \nf!bilgi = Bot bilgilerini gösterir. \nf!davet = Botu ekleme linkini gösterir. \nf!sunucubilgi = Sunucu bilgilerini gösterir. \nf!güncelleme = Bot güncellemelerini gösterir.") 
 
 
 
@@ -139,7 +189,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!fal")
+"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nfyazıtura = Bot yazı tura atar.")
 
 
 
@@ -214,7 +264,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!fal") 
+"f!falyardım = Botun fal bakma özelliği ile ilgili her şey") 
 
 
 
@@ -230,7 +280,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!fal") 
+"f!ekip = Bot ekibini gösterir. \nf!sunucular = Botun ekli olduğu sunucuları gösterir. \nf!bilgi = Bot bilgilerini gösterir. \nf!davet = Botu ekleme linkini gösterir. \nf!sunucubilgi = Sunucu bilgilerini gösterir. \nf!güncelleme = Bot güncellemelerini gösterir.") 
 
 
 
@@ -246,7 +296,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!fal")
+"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nfyazıtura = Bot yazı tura atar.")
 
 
 
@@ -635,7 +685,7 @@ client.on('message', msg => {
 	
 	if(msg.author.bot) return;
 		
-		if (msg.content.toLowerCase().match(/(f!rüyafalım yanlızlık)/g)) {
+		if (msg.content.toLowerCase().match(/(f!rüyafalım yalnızlık)/g)) {
 			if(!msg.guild) return;
 const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada yalnız kalmak, ne yazık ki iyi anlamlara gelmez ve hayırlı olan şeyleri çağrıştırmaz. Bu rüya, gerçek anlamına benzer şekilde tabir edilir ve kişinin çevresinde en fazla insan olması gerektiği zamanda durumun tam aksine kendisine el atacak kimselerin bulunmayacağına, çektiği eziyetle baş başa kalacağına, kime gideceğine, kimden akıl soracağına ve ne yapacağını bilemez olacağına işaret eder.')
