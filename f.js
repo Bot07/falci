@@ -600,7 +600,8 @@ msg.channel.send({embed: embed})
 });
 client.on('message', msg => {
 		if (msg.content.toLowerCase().match(/(tavşan)/g)) {
-const channel = client.channels.find('fal', channelName)
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
 channel.send('a')
 		}
 	});
