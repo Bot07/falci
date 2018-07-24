@@ -62,4 +62,37 @@ msg.channel.send({embed: embed})
 
 });
 
+client.on('message', msg => { 
+
+
+
+if(msg.content === prefix + 'öyardım') { 
+
+
+
+let embed = new Discord.RichEmbed()  
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
+
+
+
+.addField("Özel mesaj olarak gönderdim", 
+
+
+
+"Özel mesajlarını kontrol et! :postbox:") 
+
+
+
+msg.channel.send({embed: embed})  
+
+
+
+} 
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
