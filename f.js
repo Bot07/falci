@@ -115,7 +115,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"Tüm komutlar burada ->") 
+"DİKKAT: Botun düzgün çalışabilmesi için sunucuda 'fal' adına bir metin kanalı olmalıdır!") 
 
 
 
@@ -196,7 +196,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"Tüm komutlar burada ->") 
+"DİKKAT: Botun düzgün çalışabilmesi için sunucuda 'fal' adına bir metin kanalı olmalıdır!") 
 
 
 
