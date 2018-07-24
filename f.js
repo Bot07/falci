@@ -27,5 +27,39 @@ client.on('ready', () => {
 
 
 
+client.on('message', msg => { 
+
+
+
+if(msg.content === prefix + 'yardım') { 
+
+
+
+let embed = new Discord.RichEmbed()  
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
+
+
+
+.addField("2 çeşit yardım menüm var", 
+
+
+
+"Özel mesaj (Yardım menüsünü özel mesaj olarak atar.) ve Normal yardım (Sunucudaki chate atar.)") 
+.setDescription("Özel mesaj için = f!öyardım Normal yardım için = f!nyardım")
+
+
+
+msg.channel.send({embed: embed})  
+
+
+
+} 
+
+
+
+});
 
 client.login(process.env.BOT_TOKEN)
