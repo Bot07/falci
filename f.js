@@ -631,4 +631,14 @@ const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada yılan görmek hakkında çok çeşitli yorumlar bulunmaktadır. Rüya tabirleri yılan için genellikle düşmanı işaret eder. Farkında olmadığınız bir düşmanınız olabilir. Bu düşman genellikle kendisini gizler ve sizden menfaat sağlamaya çalışır. Yılan sinsi ve her an saldırmayı bekleyen bir düşmanı işaret ettiği gibi, büyük zorluklarla karşılaşacağınız anlamına gelebilir. Bu rüya, yılan türlerine göre farklı anlamlara sahiptir. Bunu ayrıntılı olarak anlatmaya çalıştık. Rüyada yılan görmek bir diğer taraftan hayra yorumlanır. Maddi durumunuzun güçleneceğine, ailevi hayatınızda yenilikler yaşayacağınıza işarettir. Bir çocuk sahibi olabilir veya evlilikle sonuçlanacak bir ilişkiye başlayabilirsiniz.')
 		}
 	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım yanlızlık)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada yalnız kalmak, ne yazık ki iyi anlamlara gelmez ve hayırlı olan şeyleri çağrıştırmaz. Bu rüya, gerçek anlamına benzer şekilde tabir edilir ve kişinin çevresinde en fazla insan olması gerektiği zamanda durumun tam aksine kendisine el atacak kimselerin bulunmayacağına, çektiği eziyetle baş başa kalacağına, kime gideceğine, kimden akıl soracağına ve ne yapacağını bilemez olacağına işaret eder.')
+		}
+	});
 client.login(process.env.BOT_TOKEN)
