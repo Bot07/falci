@@ -579,9 +579,21 @@ if(msg.author.id != 413346140768043018){
 
 
 
-client.channels.get("471284019414302721").send('falına bakıyorum');   
+client.channels.get("471284019414302721").send(msg.author.username + 'adlı kişinin falı;');   
+
+let embed = new Discord.RichEmbed() 
 
 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField('Falına bakıyorum', 
+
+
+
+'Falına sunucudaki "fal" adlı kanladan öğrenebilirsin'); 
 
 msg.channel.send({embed: embed}) 
 
