@@ -145,6 +145,8 @@ let embed = new Discord.RichEmbed()
 
 .setFooter("Bot yapımcısı: Emir#5218'dir.") 
 
+.setFooter("Teşekkürler; NavMen, Hakkı Akyol") 
+
 
 
 msg.member.send({embed: embed}) 
@@ -255,6 +257,7 @@ let embed = new Discord.RichEmbed()
 .setFooter("Bot yapımcısı: Emir#5218'dir.") 
 
 
+.setFooter("Teşekkürler; NavMen, Hakkı Akyol") 
 
 
 
@@ -599,8 +602,9 @@ msg.channel.send({embed: embed})
 
 });
 client.on('message', msg => {
+	
 	if(msg.author.bot) return;
-		if (msg.guild.channels.find('name', "fal")
+		
 		if (msg.content.toLowerCase().match(/(tavşan)/g)) {
 			if(!msg.guild) return;
 const channel = msg.guild.channels.find('name', "fal")
