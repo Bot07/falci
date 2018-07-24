@@ -422,4 +422,146 @@ return msg.channel.send({embed})}
 
 
 });
+client.on('message', msg => {
+
+
+
+if (msg.content === prefix + "avatar") { 
+
+
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setAuthor(msg.author.username, msg.author.avatarURL)
+
+
+
+.setColor(3447003) 
+
+
+
+.setImage(msg.author.avatarURL) 
+
+
+
+return msg.channel.send({embed})} 
+
+
+
+});
+client.on('message', msg => {
+
+
+
+if (msg.content === prefix + 'ekip') { 
+
+
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField("Falcılar", 
+
+
+
+"https://fliegeryapim.weebly.com/") 
+
+
+
+msg.channel.send({embed: embed}) 
+
+
+
+} 
+
+
+
+});
+client.on('message', msg => {
+
+
+
+if(msg.content === prefix + 'sunucular'){ 
+
+
+
+msg.channel.send(client.guilds.map(g => g.name)) 
+
+
+
+} 
+
+
+
+});
+
+client.on('message', msg => {
+
+
+
+if(msg.content === prefix + 'bilgi'){ 
+
+
+
+if(msg.author.id != 414353271474487298){ 
+
+
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField('**Sunucu Sayım:**', 
+
+
+
+'\n'+ client.guilds.size);  
+
+
+
+msg.channel.send({embed: embed})	 
+
+
+
+}} 
+
+
+
+});
+client.on('message', msg => {
+
+
+
+if (msg.content.toLowerCase() === prefix + `yazıtura`) { 
+
+
+
+var sans = ["Yazı", "Tura"]; 
+
+
+
+var sonuc = sans[Math.floor((Math.random() * sans.length))]; 
+
+
+
+msg.channel.send(`**Sonuç: ${sonuc}**`); 
+
+
+
+} 
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
