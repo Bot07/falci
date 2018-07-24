@@ -581,4 +581,21 @@ msg.channel.send({embed: embed})
 }
 
 });
+client.on('message', msg => {
+
+if (msg.content === prefix + 'falbaktır rüya') { 
+let söz = msg.content.substring(2 + 9);
+let embed = new Discord.RichEmbed() 
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+.addField(msg.author.username + söz 'falına bakıyorum',
+
+'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve falınızı yazın')
+
+msg.channel.send({embed: embed})
+
+}
+
+});
 client.login(process.env.BOT_TOKEN)
