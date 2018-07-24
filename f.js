@@ -375,4 +375,51 @@ msg.channel.send({embed: embed})
 });
 
 
+ client.on('message', msg => {
+
+
+
+   if (msg.content.startsWith(prefix + "konuştur")) {
+
+
+
+    if (msg.channel.type !== "dm"){
+
+	    msg.delete (msg.content == 'konuştur')
+
+
+
+    let söz = msg.content.substring(2 + 9);
+
+
+
+	
+
+
+
+   let embed = new Discord.RichEmbed()
+
+
+
+    .setColor(3447003)
+
+
+
+	.setDescription(söz)
+
+
+
+return msg.channel.send({embed})}
+
+
+
+   }
+
+
+
+
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
