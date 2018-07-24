@@ -594,7 +594,7 @@ let embed = new Discord.RichEmbed()
 
 .addField(msg.author.username + söz + 'falına bakıyorum',
 
-'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyyanızda ne gördüğünüzü yazın')
+'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyyanızda gördüğünüz ana tema veya nesneyi yazın. \nÖrneğin; f!rüyafalım tavşan (Kişi rüyasında tavşan görmüş)')
 
 msg.channel.send({embed: embed})
 
@@ -605,7 +605,7 @@ client.on('message', msg => {
 	
 	if(msg.author.bot) return;
 		
-		if (msg.content.toLowerCase().match(/(tavşan)/g)) {
+		if (msg.content.toLowerCase().match(/(f!rüyafalım tavşan)/g)) {
 			if(!msg.guild) return;
 const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada tavşan görmek hayatta kazanılacak olan zaferlere, iş hayatındaki olumlu adımlara ve mutluluğa işaret eder. Rüyasında tavşan gören kişinin özel hayatı da hep yolunda gidecek demektir. Rüyada görülen tavşan aynı zamanda kadınla ifade edilir ve kız arkadaş, sevgili, nişanlı ya da eş olarak değerlendirilir. Rüyada beyaz bir tavşan görmek muhafazakâr, hoşgörülü, güler yüzlü ve yumuşak huylu bir kadına delalet eder. Tavşanın siyah renkli ve çok sevimsiz olması kötü huylu, kavgacı, anlayışsız ve kıskanç bir kadına işaret eder. Rüyada bir kimsenin tavşanının ölmesi çocuğunun hastalanmasına, bir sıkıntıya ya da zorluğa düşmesine delalet eder. Rüyada tavşanla konuştuğunu gören kişi toplumdan dışlanmış, yaramaz ve kötü kabul edilmiş bir kadınla tanışarak samimi olacak ve arkadaşlık kuracak demektir. Rüyada tavşanın çok hızlı koşuyor olması kimsenin bilmemesi ve öğrenmemesi gereken bir konu olacağına ve rüya sahibinin de bunu herkesten gizlemeye çalışacağına işaret eder.')
