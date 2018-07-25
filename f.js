@@ -969,14 +969,28 @@ msg.channel.send({embed: embed})
 
 });
  client.on('message', msg => {
-	 if (msg.content.toLowerCase().match(/(f!internetfalım)/g)) {
+	 if(msg.content === prefix + 'internetfalım') { 
    
 
     let söz = msg.content.substring(2 + 14);
-if(!msg.guild) return;
-const channel = msg.guild.channels.find('name', "fal")
-channel.send('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
+		 let embed = new Discord.RichEmbed()  
 
+
+
+
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
+
+
+
+
+
+
+
+.addField('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
+msg.channel.send({embed: embed})  
    }
  
 });
