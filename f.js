@@ -1287,8 +1287,8 @@ let embed = new Discord.RichEmbed()
 'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyyanızda gördüğünüz ana tema veya nesneyi yazın. \nÖrneğin; f!rüyafalım tavşan (Kişi rüyasında tavşan görmüş)')
 
 
-.addField('Demo sürüm olduğu için eğer falınıza cevap vermiyorise',
-	  'Aynı işlemleri f!internetfalım komutu ile yapın!')
+.addField('Demo sürüm olduğu için eğer falınıza cevap vermiyor ise',
+	  'Aynı işlemleri f!internetfalım komutu ile yapın! *DİKKAT: Türkçe harf kullanmamaya dikkat edin!!! (Sadece f!internetfalım komutu için geçerli)*')
 msg.channel.send({embed: embed})
 
 
