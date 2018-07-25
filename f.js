@@ -799,4 +799,105 @@ const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada labirent görmek, rüya sahibinin, yaptığı işte detaylara indiği için sorun yaşadığına, bu yüzden zaman ve para kaybettiğine ve sorunu çözmek için daha fazla emek vermesi gerektiğine delalet eder. Aynı zamanda, rüyayı gören kişinin, kısa zaman içinde olmasa bile yaşanan sıkıntılardan kurtulacağına ve sorunlarının üstesinden geleceğine işaret eder.')
 		}
 	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım kabak)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada kabak görmek hayırlı şeylere işaret eder. Kişi için şan, şöhret, saygınlık, zenginlik, bolluk, rütbe, zafer, başarı ve şifa anlamına gelir. Rüyada kabak yemeği yediğini gören kişi, zamanında kaybettiği bir şeye yeniden kavuşacak demektir. Ayrıca kişi rüyada ne kadar çok kabak yerse işinde o denli uzmanlaşacak ve o denli rütbe sahibi olacak demektir. Rüyada kabağı çiğ olarak yemek kişinin psikolojisinin bozularak her şeyden kuşku ve endişe duyacağına işaret ederken aynı zamanda birileriyle yaşayacağı münakaşaya ya da kavgaya delalettir. Rüyada bir kabak ağacı gören ve dibinde oturarak dinlenen kişi çevresi, akrabaları, arkadaşları ile çok iyi geçinen kimsedir. Rüyada kendini kabakların olduğu bir tarladan gören kişi sağlık sorunlarından kurtulacak ve şifa bulacak demektir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım yağmur)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada yağmur görmek aslında hayırlara işaret eder. Yağmur bizler için bir nevi bir yaşam kaynağıdır. Bir yere ne kadar çok yağmur yağarsa o yerde o kadar yeşillik, o kadar ürün, o kadar hayat olur. Rüyada da yağmur çok farklı anlamlara gelmez. Rüyanın görüldüğü yere ve yağmurun birlikte görüldüğü objelere göre yorum değişse de genel olarak yağmur zenginliği ve güzelliği işaret eder. Fakat daha önce de belirttiğimiz gibi rüyada yağmurun bir arada görüldüğü objelere bağlı olarak yorum değişebilmektedir. Rüyada yağmur çok şiddetli değilse, bir anda sokakları boşaltacak ve ortalığı bir felaket alanına çevirmeyecekse, yani keyiflendirecek şekilde yağıyorsa bu bol rızka, bol kazanca ve bol ürüne işaret eder. Yağmurun hane içine yağması pekiyi yorumlanmaz. Eğer yağmur hane içine yağıyorsa bu rüya sahibinin maddi bir kaybı olacağına ve onu sıkıntıya sokacağına işaret eder ve bazen de hane içine yağan yağmur, o ev ahalinin yaşayacağı sıkıntıyı işaret eder. Bazen yağmur rüyada bir engel olarak da yorumlanabilir. Bir yolcunun yolundan geri kalmasına ve o yolu gidemeyişine işaret eder. Eğer yağmur bir felakete neden olacak şekilde yağıyor ve taş üstünde taş bırakmıyorsa bu yağmurun yerdiği o bölgede oluşacak kötülüğe işaret eder. Eğer yağmur rüya sahibinin evinin içine yağıyorsa bu rüya sahibinin iyi, güzel ve hayırlı şeyler yaşayacağına işaret eder. Ama yağmur tek bir yere değil de rüyada görülen yerin tamamına yağıyorsa bu hayır gelmeyeceği düşünülen bir işin bir anda olumlu yönde gelişme göstereceğine işaret eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım çağ)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada çağırmak, kişinin yardıma ihtiyacı olduğu bir durum yaşayacağı, ani bir olayın vuku bularak kişinin yaşam koşullarını zorlayacağı ve aile düzeninin bozulacağını bildirir. Bu rüya aynı zamanda geçmişte yaşanan bir sıkıntının yeniden kişiyi çok rahatsız edecek bir duruma geleceğini, rüya sahibinin yakınları tarafından dışlanacağını da bildirir. Ruh çağırdığını görenler günah işler veya çok büyük bir hata yaparlar. Bir hayvanı çağırdığını görmek ise yalan söylemeye ve kendisine güvenen insanlara karşı affedilmez kötülüklerde bulunmak manasına gelir. // Rüyada çağrılmak, rüyayı gören kişinin, uzun bir zaman uğraşmak zorunda kalacağı, çok uzun ve yorucu bir tedavi dönemi yaşayacağı ve sonrasında eski iyi ve sağlıklı yaşamına döneceği bir hastalığa yakalanacağına tabir edilir. Aynı zamanda, uzun zamandan beri beklenen ve alınması ile birlikte çok güzel bir işe girişilecek güzel ve hayırlı bir habere delalet edilir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım odun)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada odun görmek bildiğini okuyan, inatçı, laf dinlemeyen, pinti ve asi birine işaret eder. Rüyada kırılmış ve yakılmak için bekleyen odun görmek zorlukların ve sıkıntıların aşılmasına, siyasette görev almaya, servet sahibi olmaya ve kişinin hiçbir eksiği kalmamasına delalet eder. Büyük bir odun parçası görmek helal olmayan, hile ile kazanılmış olan kazanca işaret eder. Rüyada sobada yanan ateşe odun atmak kişinin iyi bildiği ve sevdiği birinin aslında onun arkasından kuyusunu kazan kişi olduğunu öğrenmesine işaret eder. Olgun bir beyefendinin bu rüyayı görmesi rütbesinin artacağına işaret ederken, bu rüya karı koca için sorun ve münakaşa anlamına gelir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım vadi)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada vadi görmek, işinde en iyisi olup, en büyük unvanı almaya, başarıya, mutluluğa, bol kazanca, ziyade olacak nimete ve dünya yaşamından yana aradığını bulmaya alamet eder. Rüya sahibinin istediği kadar mal mülk sahibi olacağı, zenginliğinin de herkesi kıskandıracağı oranda çoğalacağı ile tabir edilir. Rüyada vadi görmek, rüya sahibinin kadrinin yüce, gönlünün bol olduğuna kişinin hidayete ermeyi başaracağına ve hikmetli bir insan olarak anılacağına rivayet edilir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım zaman)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada zaman görmek, rüya sahibinin hayır işleri yapması, makbul yollardan ekmek kazanması, yaşam şartlarının ya da geçimin zor olmasına rağmen yine de doğruluktan şaşmaması, Allah, kitap ve din aşkı ile yanması ve imanından hiçbir şartta ve koşulda ödün vermemesi anlamına gelir. Rüyada zaman görmek, kişinin dualarının kabul olacağı ve istediklerinin kendisine Allah tarafından nasip edileceği şeklinde tabir edilir.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım nakış)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada nakış görmek, rüyayı gören kişinin, işlerinin hiç olmadığı kadar iyi bir hal alacağına, kazancının günden güne çok artacağına, maddi olarak rahatladığı bir dönemde büyük ve hayırlı bir ortaklık kuracağına, bu ortaklık sayesinde iş dünyasında daha çok tanınacağına, sorunlarının yakın zaman içinde biteceğine ancak aile hayatı içinde kendisini çok üzecek bir olayla karşılaşacağına ve çok üzüleceğine delalet eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım eğlenmek)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada eğlenmek, rüyayı gören kişinin mutlu olacağına, rahatlayacağına, ferahlayacağına, keyfe ve neşeye kavuşacağına işaret eder ve hayırlara alamet ettiği şeklinde yorumlanır. Rüya sahibinin muradına ereceğine, hedeflerine yaklaşacağına, hayallerini gerçekleştirmek için eşsiz, güzel ve büyük fırsatlar elde edeceğine ve tüm bu güzel gelişmeler sayesinde de deyim yerindeyse ağzının kulaklarına varacağına delalet eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım dağ)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada dağ görmek çok hayırlı bir rüyadır. Rüyada dağ gören kişi ülke yönetiminde söz hakkı bulunan üstün yetkilerle donatılır, işinde bulunabilecek en üst mevkie erişir, toplum içinde otorite, söz ve saygınlık sahibi olur. Rüyada bir dağın zirvesinde Allah’a el açıp ona şükreden kişi hayatı boyunca adaletli ve vicdanlı bir kişi olacak demektir. Eğer bir kimse rüyasında bir dağın yamacında dini vecibesini yerine getiriyorsa devletin üst kademelerinde resmi bir görevde, geniş yetkilerle bir memurluk işine atanır. Bir kişi eğer rüyasında dağdan indiğini görürse maddi zarara ve kayıplara uğrar. Bir kişi dağda rampa bir yoldan çıktığını görürse bu onun yaşayacağı vicdan azabına delalet eder.')
+		}
+	});
+client.on('message', msg => {
+	
+	if(msg.author.bot) return;
+		
+		if (msg.content.toLowerCase().match(/(f!rüyafalım üç)/g)) {
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send('Rüyada üç görmek, rüyanın genel mahiyetine uygun şekilde değerlendirilmelidir. Görülen diğer nesne ve olaylar rüyanın asıl anlamını oluşturacağından en doğru yorum bu şekilde olacaktır. Üç görmek kişiye zamanla ilgili bilgi verir ve olması istenen bir dilek için kişinin üç vakit beklemesi gerektiğinin ve sonunda hayalinin gerçek olacağının müjdesini de verir.')
+		}
+	});
+
 client.login(process.env.BOT_TOKEN)
