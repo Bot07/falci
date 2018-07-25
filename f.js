@@ -971,35 +971,27 @@ msg.channel.send({embed: embed})
  client.on('message', msg => {
 
 
-
+if(msg.author.bot) return;
    if (msg.content.startsWith(prefix + "internetfalım")) {
 
 
 
-    if (msg.channel.type !== "dm"){
+    
 
 
 
     let söz = msg.content.substring(2 + 14);
 
-	     
+	    
+		
 
-
-
-   let embed = new Discord.RichEmbed()
-
-
-
-    .setColor(3447003)
-
-
-
-	.setDescription('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
+			if(!msg.guild) return;
+const channel = msg.guild.channels.find('name', "fal")
+channel.send ('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
 
 
 
 
-return msg.channel.send({embed})}
 
 
 
