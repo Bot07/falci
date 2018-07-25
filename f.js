@@ -979,7 +979,7 @@ msg.channel.send({embed: embed})
 
 
 
-    let söz = msg.content.substring(2 + 13);
+    let söz = msg.content.substring(2 + 14);
 
 	     
 
