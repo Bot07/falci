@@ -957,7 +957,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-msg.channel.send({embed: embed})  
+return msg.channel.send({embed: embed})  
 
 
 
