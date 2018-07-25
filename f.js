@@ -977,7 +977,6 @@ msg.channel.send({embed: embed})
 
 
 
-    if (msg.channel.type !== "dm"){
 
 
 
