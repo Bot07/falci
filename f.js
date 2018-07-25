@@ -641,8 +641,9 @@ let embed = new Discord.RichEmbed()
 
 .addField(msg.author.username + söz + 'falına bakıyorum',
 
-'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyyanızda gördüğünüz ana tema veya nesneyi yazın. \nÖrneğin; f!rüyafalım tavşan (Kişi rüyasında tavşan görmüş)')
-
+'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyanızda gördüğünüz ana tema veya nesneyi yazın. \nÖrneğin; f!rüyafalım tavşan (Kişi rüyasında tavşan görmüş)')
+.addField('Demo sürüm olduğu için aradığınız konuda rüya falı bulamayabilirsiniz.';
+	  'Bu durumda f!internetfalım ve rüyanızda gördüğünüz ana tema veya nesneyi yazarak ulaşabilirsiniz!')
 msg.channel.send({embed: embed})
 
 }
