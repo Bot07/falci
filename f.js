@@ -969,7 +969,8 @@ msg.channel.send({embed: embed})
 
 });
  client.on('message', msg => {
-   if (msg.content.startsWith(prefix + "internetfalım")) {
+	 if (msg.content.toLowerCase().match(/(f!internetfalım)/g)) {
+   
 
     let söz = msg.content.substring(2 + 14);
 if(!msg.guild) return;
