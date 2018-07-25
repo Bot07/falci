@@ -974,9 +974,9 @@ msg.channel.send({embed: embed})
     let söz = msg.content.substring(2 + 14);
 if(!msg.guild) return;
 const channel = msg.guild.channels.find('name', "fal")
-channel.send ('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
+channel.send('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
 
    }
-
+ 
 });
 client.login(process.env.BOT_TOKEN)
