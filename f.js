@@ -908,7 +908,7 @@ client.on('message', msg => {
 
 
 
-if(msg.content === prefix + 'yardım') { 
+if(msg.content === prefix + 'rüyafalım') { 
 
 
 
