@@ -899,14 +899,72 @@ const channel = msg.guild.channels.find('name', "fal")
 channel.send('Rüyada üç görmek, rüyanın genel mahiyetine uygun şekilde değerlendirilmelidir. Görülen diğer nesne ve olaylar rüyanın asıl anlamını oluşturacağından en doğru yorum bu şekilde olacaktır. Üç görmek kişiye zamanla ilgili bilgi verir ve olması istenen bir dilek için kişinin üç vakit beklemesi gerektiğinin ve sonunda hayalinin gerçek olacağının müjdesini de verir.')
 		}
 	});
-client.on('message', msg => {
-	
-	if(msg.author.bot) return;
-		
-		if (msg.content.toLowerCase().match(/(f!rüyafalım  )/g)) {
-			if(!msg.guild) return;
-const channel = msg.guild.channels.find('name', "fal")
-channel.send('Falcı olabilirim fakat müneccim değilim! Rüyanda ne gördüğünü yazmalısın!')
-		}
+
+client.on('message', msg => { 
+
+
+
+
+
+
+
+if(msg.content === prefix + 'yardım') { 
+
+
+
+
+
+
+
+let embed = new Discord.RichEmbed()  
+
+
+
+
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
+
+
+
+
+
+
+
+.addField("Falcı olabilirim fakat müneccim değilim! Rüyanda ne gördüğünü yazmalısın!", 
+
+
+
+
+
+
+
+"Yardıma ihtiyacın varsa f!falyardım yaz!") 
+
+
+
+
+
+
+
+
+
+msg.channel.send({embed: embed})  
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
 });
 client.login(process.env.BOT_TOKEN)
