@@ -993,7 +993,7 @@ msg.channel.send({embed: embed})
 
 
 
-	.setDescription('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html)
+	.setDescription('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
 
 
 
