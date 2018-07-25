@@ -913,7 +913,6 @@ client.on('message', msg => {
 
 
  
-    if (msg.channel.type !== "dm"){ 
 
 
 
