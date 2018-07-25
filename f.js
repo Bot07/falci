@@ -968,30 +968,53 @@ msg.channel.send({embed: embed})
 
 
 });
+
  client.on('message', msg => {
-	 if(msg.content === prefix + 'internetfalım') { 
-   
+
+
+
+   if (msg.content.startsWith(prefix + "internetfalım")) {
+
+
+
+    if (msg.channel.type !== "dm"){
+
+
 
     let söz = msg.content.substring(2 + 14);
-		 let embed = new Discord.RichEmbed()  
+
+	     
 
 
 
+   let embed = new Discord.RichEmbed()
 
 
 
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
-
+    .setColor(3447003)
 
 
 
+	.setDescription('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
+
+    
+
+
+return msg.channel.send({embed})}
 
 
 
-.addField('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html')
-msg.channel.send({embed: embed})  
+	  
+
+	   
+
    }
- 
+
+
+
+
+
+
+
 });
 client.login(process.env.BOT_TOKEN)
