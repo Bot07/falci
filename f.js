@@ -901,79 +901,7 @@ channel.send('Rüyada üç görmek, rüyanın genel mahiyetine uygun şekilde de
 		}
 	});
 
-client.on('message', msg => { 
 
-
-
-
-
-
-
-if(msg.content === prefix + 'rüyafalım') { 
-
-
-
-
-
- 
-
-
- 
-
-
- 
-  
-let embed = new Discord.RichEmbed()  
-
-
-
-
-
-
-
-.setColor(Math.floor(Math.random() * (0xFFFFFF + 5)))  
-
-
-
-
-
-
-
-.addField("Falcı olabilirim fakat müneccim değilim! Rüyanda ne gördüğünü yazmalısın!", 
-
-
-
-
-
-
-
-"Yardıma ihtiyacın varsa f!falyardım yaz!") 
-
-
-
-
-
-
-
-
-
-return msg.channel.send({embed: embed})  
-
-
-
-
-
-
-
-} 
-
-
-
-
-
-
-
-});
 
  
 client.on('message', msg => { 
