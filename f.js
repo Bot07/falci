@@ -915,8 +915,14 @@ if(msg.content === prefix + 'rüyafalım') {
 
 
 
+ 
 
 
+ 
+
+
+ 
+  
 let embed = new Discord.RichEmbed()  
 
 
@@ -970,8 +976,62 @@ msg.channel.send({embed: embed})
 });
 
  
+client.on('message', msg => { 
+
+ if (msg.content.startsWith(prefix + "internetfalım")) { 
 
 
+
+
+
+ 
+    if (msg.channel.type !== "dm"){ 
+
+
+
+ 
+   let söz = msg.content.substring(2 + 14); 
+
+
+ 
+
+
+ 
+   let embed = new Discord.RichEmbed() 
+
+
+ 
+
+
+ 
+    .setColor(3447003) 
+
+
+
+ 
+	.setDescription('Falını bu linkten öğrenebilirsin: https://www.ruyatabirleri.com/ruyada-' + söz + '-gormek.html') 
+
+
+ 
+
+
+
+
+ 
+return msg.channel.send({embed})} 
+
+
+
+
+ 
+ } 
+
+
+ 
+
+
+ 
+ }); 
 
 
 
