@@ -1232,7 +1232,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-'Örneğin; "f!falbaktır rüya" = rüya falı bakar')
+'Örneğin; "f!falbaktır rüya" = Rüya falı bakar. \n"f!falbaktır kahve" = Kahve falına bakar.')
 
 
 
@@ -1280,7 +1280,39 @@ msg.channel.send({embed: embed})
 
 
 });
+client.on('message', msg => {
 
+
+
+if (msg.content === prefix + 'falbaktır kahve') { 
+
+let söz = msg.content.substring(2 + 9);
+
+let embed = new Discord.RichEmbed() 
+
+
+
+.setColor(Math.floor(Math.random() * (0xFFFFFF + 5))) 
+
+
+
+.addField(msg.author.username + söz + 'falına bakıyorum',
+
+
+
+'Falına bakabilmem için sunucudaki "fal" kanalına kahve bardağınınızın fotoğrafını atarken yorum kısmına f!kahvefalım yazın.')
+
+
+
+msg.channel.send({embed: embed})
+
+
+
+}
+
+
+
+});
 client.on('message', msg => {
 
 	
