@@ -2022,7 +2022,7 @@ if (msg.content === prefix + 'kahvefalım') {
 
 
 
-var cevaplar = ['https://goo.gl/ghnZLt','https://goo.gl/ghnZLt']; 
+var cevaplar = ['https://goo.gl/ghnZLt','https://goo.gl/ghnZLt','https://goo.gl/ghnZLt']; 
 
 
 
