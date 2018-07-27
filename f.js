@@ -2014,5 +2014,29 @@ return msg.channel.send({embed})}
 
 
 });
+ client.on('message', msg => {
 
+
+
+if (msg.content === prefix + 'kahvefalım') { 
+
+
+
+var cevaplar = ['https://goo.gl/nMsuYV','https://goo.gl/F4Fh8M','https://goo.gl/2BfYqM']; 
+
+
+
+var cevap = cevaplar[Math.floor(Math.random() * cevaplar.length)]; 
+
+
+
+msg.channel.sendEmbed(new Discord.RichEmbed().setImage(`${cevap}`).setColor("RANDOM")) 
+
+
+
+}
+
+
+
+});
 client.login(process.env.BOT_TOKEN)
