@@ -1232,7 +1232,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-'Örneğin; "f!falbaktır rüya" = Rüya falı bakar. \n"f!falbaktır kahve" = Kahve falına bakar.')
+'Örneğin; \n*"f!falbaktır rüya" = Rüya falı bakar.* \n*"f!falbaktır kahve" = Kahve falına bakar.*')
 
 
 
@@ -1262,7 +1262,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-.addField(msg.author.username + söz + 'falına bakıyorum',
+.addField(msg.author.username + söz + ' falına bakıyorum',
 
 
 
@@ -1296,7 +1296,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-.addField(msg.author.username + söz + 'falına bakıyorum',
+.addField(msg.author.username + söz + ' falına bakıyorum',
 
 
 
