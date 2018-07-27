@@ -2022,7 +2022,7 @@ if (msg.content === prefix + 'kahvefalım') {
 
 
 
-var cevaplar = ['https://goo.gl/ghnZLt','https://goo.gl/ghnZLt','https://goo.gl/ghnZLt']; 
+var cevaplar = ['https://goo.gl/ckKXEP','https://goo.gl/w9FAEX','https://goo.gl/uS4B8V','https://goo.gl/WxujLw','https://goo.gl/s19t6s','https://goo.gl/BqZrth','https://goo.gl/SS7PHE','https://goo.gl/dFSh6o','https://goo.gl/rbVwp7','https://goo.gl/e1Z4Fo','https://goo.gl/fFJFP7','https://goo.gl/mZHvWB','https://goo.gl/L31kUC','https://goo.gl/Cu2E8D','https://goo.gl/5d9k65','https://goo.gl/6d496A','https://goo.gl/SEm82V','https://goo.gl/2GDV49','https://goo.gl/XJzdUW','https://goo.gl/PFCgVn','https://goo.gl/5k8Jb9','https://goo.gl/ghnZLt']; 
 
 
 
