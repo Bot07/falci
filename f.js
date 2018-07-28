@@ -388,7 +388,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-.setFooter("Bot yapımcısı: Emir#5218'dir. Teşekkürler; NavMen, Hakkı Akyol") 
+.setFooter('Bot yapımcıları: Emir#5218, Console.Write("Hakkı AKYOL");#7767 | Teşekkürler; NavMen#3861') 
 
 
 
@@ -610,7 +610,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-.setFooter("Bot yapımcısı: Emir#5218'dir. Teşekkürler; NavMen, Hakkı Akyol") 
+.setFooter('Bot yapımcıları: Emir#5218, Console.Write("Hakkı AKYOL");#7767 | Teşekkürler; NavMen#3861') 
 
 
 
