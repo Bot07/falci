@@ -1270,7 +1270,7 @@ let embed = new Discord.RichEmbed()
 
 
 .addField('Demo sürüm olduğu için eğer falınıza cevap vermiyor ise',
-	  'Aynı işlemleri f!internetfalım komutu ile yapın! *DİKKAT: Türkçe harf kullanmamaya dikkat edin!!! (Sadece f!internetfalım komutu için geçerli)*')
+	  'Aynı işlemleri f!internetfalım komutu ile yapın! **DİKKAT: Türkçe harf kullanmamaya dikkat edin!!! (Sadece f!internetfalım komutu için geçerli)**')
 msg.channel.send({embed: embed})
 
 
