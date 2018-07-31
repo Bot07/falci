@@ -10,7 +10,7 @@ const client = new Discord.Client();
 
 
 
-var prefix = 'f!' 
+var prefix = 'fd!' 
 
 
 
@@ -348,7 +348,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!falyardım = Botun fal bakma özelliği ile ilgili her şey") 
+"fd!falyardım = Botun fal bakma özelliği ile ilgili her şey") 
 
 
 
@@ -364,7 +364,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!ekip = Bot ekibini gösterir. \nf!sunucular = Botun ekli olduğu sunucuları gösterir. \nf!bilgi = Bot bilgilerini gösterir. \nf!davet = Botu ekleme linkini gösterir. \nf!sunucubilgi = Sunucu bilgilerini gösterir. \nf!güncelleme = Bot güncellemelerini gösterir.") 
+"fd!ekip = Bot ekibini gösterir. \nfd!sunucular = Botun ekli olduğu sunucuları gösterir. \nfd!bilgi = Bot bilgilerini gösterir. \nfd!davet = Botu ekleme linkini gösterir. \nfd!sunucubilgi = Sunucu bilgilerini gösterir. \nfd!güncelleme = Bot güncellemelerini gösterir.") 
 
 
 
@@ -380,7 +380,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nf!yazıtura = Bot yazı tura atar.")
+"fd!avatar = Kullanıcı avatarını gösterir. \nfd!konuştur = Bot söylediğinizi tekrarlar. \nfd!yazıtura = Bot yazı tura atar.")
 
 
 
@@ -526,7 +526,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!falyardım = Botun fal bakma özelliği ile ilgili her şey") 
+"fd!falyardım = Botun fal bakma özelliği ile ilgili her şey") 
 
 
 
@@ -558,7 +558,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!ekip = Bot ekibini gösterir. \nf!sunucular = Botun ekli olduğu sunucuları gösterir. \nf!bilgi = Bot bilgilerini gösterir. \nf!davet = Botu ekleme linkini gösterir. \nf!sunucubilgi = Sunucu bilgilerini gösterir. \nf!güncelleme = Bot güncellemelerini gösterir.") 
+"fd!ekip = Bot ekibini gösterir. \nfd!sunucular = Botun ekli olduğu sunucuları gösterir. \nfd!bilgi = Bot bilgilerini gösterir. \nfd!davet = Botu ekleme linkini gösterir. \nfd!sunucubilgi = Sunucu bilgilerini gösterir. \nfd!güncelleme = Bot güncellemelerini gösterir.") 
 
 
 
@@ -590,7 +590,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-"f!avatar = Kullanıcı avatarını gösterir. \nf!konuştur = Bot söylediğinizi tekrarlar. \nf!yazıtura = Bot yazı tura atar.")
+"fd!avatar = Kullanıcı avatarını gösterir. \nfd!konuştur = Bot söylediğinizi tekrarlar. \nfd!yazıtura = Bot yazı tura atar.")
 
 
 
@@ -862,7 +862,7 @@ msg.channel.send({embed: embed})
 
 
 
-    let söz = msg.content.substring(2 + 9);
+    let söz = msg.content.substring(3 + 9);
 
 
 
@@ -1232,7 +1232,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-'Örneğin; \n*"f!falbaktır rüya" = Rüya falı bakar.* \n*"f!falbaktır kahve" = Kahve falına bakar.*')
+'Örneğin; \n*"fd!falbaktır rüya" = Rüya falı bakar.* \n*"fd!falbaktır kahve" = Kahve falına bakar.*')
 
 
 
@@ -1266,11 +1266,11 @@ let embed = new Discord.RichEmbed()
 
 
 
-'Falına bakabilmem için sunucudaki "fal" kanalına f!rüyafalım ve rüyyanızda gördüğünüz ana tema veya nesneyi yazın. \nÖrneğin; f!rüyafalım tavşan (Kişi rüyasında tavşan görmüş)')
+'Falına bakabilmem için sunucudaki "fal" kanalına fd!rüyafalım ve rüyyanızda gördüğünüz ana tema veya nesneyi yazın. \nÖrneğin; fd!rüyafalım tavşan (Kişi rüyasında tavşan görmüş)')
 
 
 .addField('Demo sürüm olduğu için eğer falınıza cevap vermiyor ise',
-	  'Aynı işlemleri f!internetfalım komutu ile yapın! **DİKKAT: Türkçe harf kullanmamaya dikkat edin!!! (Sadece f!internetfalım komutu için geçerli)**')
+	  'Aynı işlemleri fd!internetfalım komutu ile yapın! **DİKKAT: Türkçe harf kullanmamaya dikkat edin!!! (Sadece fd!internetfalım komutu için geçerli)**')
 msg.channel.send({embed: embed})
 
 
@@ -1300,7 +1300,7 @@ let embed = new Discord.RichEmbed()
 
 
 
-'Falına bakabilmem için sunucudaki "fal" kanalına kahve bardağınınızın fotoğrafını atarken yorum kısmına f!kahvefalım yazın.')
+'Falına bakabilmem için sunucudaki "fal" kanalına kahve bardağınınızın fotoğrafını atarken yorum kısmına fd!kahvefalım yazın.')
 
 
 
