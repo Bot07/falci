@@ -1948,7 +1948,6 @@ msg.channel.send({embed: embed})
 
 
 
-
 });
 
  client.on('message', msg => {
@@ -1975,7 +1974,7 @@ msg.channel.send({embed: embed})
 
 
 
-    let söz = msg.content.substring(2 + 14);
+    let söz = msg.content.substring(3 + 14);
 
 
 
