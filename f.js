@@ -713,7 +713,6 @@ let embed = new Discord.RichEmbed()
 
 
 
-
 "https://discord.gg/89j8fNX")   
 
 
@@ -760,7 +759,7 @@ if(msg.author.id != 413346140768043018){
 
 
 
-  let söz = msg.content.substring(2 + 7);
+  let söz = msg.content.substring(3 + 7);
 
 
 
